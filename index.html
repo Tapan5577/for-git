@@ -6,6 +6,113 @@
     <title>Document</title>
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hello{
+            height: 150px;
+            width: 150px;
+            float: left;
+            margin: 105px 60px;
+           background-color: rgb(41, 43, 39);
+           border-radius: 10px;
+           font-size: 30px;
+           color: aliceblue;
+           box-shadow: 5px 5px 10px 5px  black;
+        }
+        .hello:hover{
+            background-color: mediumspringgreen;
+            color: black;
+        }
+        .hello2{
+            display: flex;
+            justify-content: center;
+        }
+        .size{
+            font-size: 60px;
+        }
+        .size:hover{
+            color: azure;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(255, 145, 0);">
+   <h1 class="size"><center><u>Bat Ball Stump Game</u></center></h1>
+   
+  <div class="hello2">
+   <button class="hello" onclick="
+   let computerChoice
+    console.log('You have choosen Bat');
+    let r = Math.random() * 3;
+   if (r > 0 && r <= 1) 
+   {
+    let computerChoice = 'Bat';
+    console.log('computer choice is Bat');
+   }
+   else if (r > 1 && r <= 2){
+let computerChoice = 'Ball';
+console.log('computer choice is Ball');
+   }
+   else {
+    let computerChoice = 'Stump';
+    console.log('computer choice is Stump');
+   }
+
+  ;
+  if (computerChoice === 'Ball'){
+    console.log('You won');
+}
     
+    
+    
+    "> Bat</button>
+   <button class="hello" onclick="
+    console.log('You have choosen Ball');
+    let b = Math.random() * 3;
+   if (b > 0 && b <= 1) 
+   {
+    let computerChoice = 'Bat';
+    console.log('computer choice is Bat');
+   }
+   else if (b > 1 && b <= 2){
+let computerChoice = 'Ball';
+console.log('computer choice is Ball');
+   }
+   else {
+    let computerChoice = 'Stump';
+    console.log('computer choice is Stump');
+   }
+
+   
+   ">Ball</button>
+   <button class="hello" onclick="
+    console.log('You have choosen Stump');
+    let s = Math.random() * 3;
+   if (s > 0 && s <= 1) 
+   {
+    let computerChoice = 'Bat';
+    console.log('computer choice is Bat');
+   }
+   else if (s > 1 && s <= 2){
+let computerChoice = 'Ball';
+console.log('computer choice is Ball');
+   }
+   else {
+    let computerChoice = 'Stump';
+    console.log('computer choice is Stump');
+   }
+
+   ">Stump</button>
+</div>
+</div> 
+</body>
+<script src="Tapan.js">
+
+</script>
+</html>
 </body>
 </html>
