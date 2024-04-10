@@ -50,25 +50,32 @@
     let r = Math.random() * 3;
    if (r > 0 && r <= 1) 
    {
-    let computerChoice = 'Bat';
-    console.log('computer choice is Bat');
+     computerChoice = 'Bat';
+   // console.log('computer choice is Bat');
    }
    else if (r > 1 && r <= 2){
-let computerChoice = 'Ball';
-console.log('computer choice is Ball');
+   computerChoice = 'Ball';
+  // console.log('computer choice is Ball');
    }
    else {
-    let computerChoice = 'Stump';
-    console.log('computer choice is Stump');
+     computerChoice = 'Stump';
+  //  console.log('computer choice is Stump');
    }
-
-  ;
+console.log(`computerChoice is ${computerChoice}`);
+  
   if (computerChoice === 'Ball'){
     console.log('You won');
 }
-    
-    
-    
+else if (computerChoice === 'Bat'){
+    console.log('Match draw');
+}
+else if (computerChoice === 'Stump'){
+    console.log('You loos');
+}
+else{
+    console.logo('you loos')
+}
+
     "> Bat</button>
    <button class="hello" onclick="
     console.log('You have choosen Ball');
@@ -86,7 +93,6 @@ console.log('computer choice is Ball');
     let computerChoice = 'Stump';
     console.log('computer choice is Stump');
    }
-
    
    ">Ball</button>
    <button class="hello" onclick="
